@@ -19,12 +19,13 @@ header {
         div {
             display: flex;
             align-items: center;
-            font-size: 30px;
+            font-size: 20px;
             font-family: 'Times New Roman', Times, serif;
         }
 
         p {
             float: right;
+            font-size: 30px;
             margin-left: 10px;
         }
 
@@ -43,10 +44,10 @@ header {
                 transition: .5s all;
             }
 
-            a:hover {
+            /*a:hover {
                 color: red;
-                border-bottom: 2px solid rgb(145, 7, 7);
-            }
+            border-bottom: 2px solid rgb(145, 7, 7);
+            } */
 
             .btn {
                 background-color: red;
@@ -106,7 +107,8 @@ main {
             background-color: rgb(193, 130, 13);
         }
 
-        p, h1 {
+        p,
+        h1 {
             font-family: Arial, Helvetica, sans-serif;
             margin: 1px
         }
@@ -122,8 +124,8 @@ main {
     }
 
     h1:hover {
-    color: rgba(255, 0, 0, 0.83);
-    font-size: 65px;
+        color: rgba(255, 0, 0, 0.83);
+        font-size: 65px;
     }
 
     #sobre {
@@ -131,7 +133,7 @@ main {
             text-transform: uppercase;
             text-align: center;
             margin: 30px;
-            font-size: 50px; 
+            font-size: 50px;
         }
 
         .image {
@@ -139,6 +141,7 @@ main {
             border-radius: 10px;
             box-shadow: 0 0 25px white;
         }
+
         p {
             margin: 30px;
         }
@@ -150,9 +153,11 @@ main {
             text-align: center;
             margin: 30px;
         }
+
         .grid-3 {
             display: grid;
             grid-template-columns: repeat(3, 33.33%);
+
             .col {
                 box-shadow: 0 0 25px white;
                 margin: 10px;
@@ -160,27 +165,33 @@ main {
                 padding: 20px;
                 text-align: center;
             }
+
             h3 {
                 text-transform: uppercase;
                 color: orange;
                 font-size: 16px;
             }
+
             hr {
                 margin: 20px 0;
                 border: 1px dashed #ccc;
             }
+
             .valor {
                 color: red;
                 font-size: 20px;
+
                 strong {
                     font-size: 30px;
                 }
             }
+
             ul li {
                 text-align: left;
             }
 
         }
+
         .plano {
             background-color: rgb(92, 179, 237);
             color: #0E1729;
@@ -188,22 +199,46 @@ main {
             padding: 10px;
             border-radius: 5px;
         }
+
         .plano:hover {
-            background-color:rgb(0, 30, 255)
+            background-color: rgb(0, 30, 255)
         }
     }
 }
 
+.efeito {
+    position: relative;
+    display: inline-block;
+}
 
+.efeito:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    width: 50%;
+    background: rgb(255, 0, 0);
+    border-radius: 50px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s linear;
+}
 
+.efeito:hover:before {
+    transform: scaleX(2);
+}
 
+/*.image {
+    animation: mexendo 1s linear 15s infinite both alternate;
+}
 
+@keyframes mexendo {
+    0% {
+        transform: skew(0deg);
+    }
 
-
-
-
-
-
-
-
-
+    100% {
+        transform: skew(30deg, 20deg);
+    }
+}*/
