@@ -51,18 +51,27 @@
         </nav>
     </header>
 
-    <div id="contatos"> <!-- class="dados dados-card"-->
-        <h1 id="contato">Entre em Contato</h1>
-        <input type="text" class="dados-input" placeholder="Nome">
-        <input type="password" class="dados-input" placeholder="Password">
-        <button class="dados-button">Enviar</button>
-    </div>
+    <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu Nome" autocomplete="off">
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="Digite seu E-mail" autocomplete="off">
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite uma Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="5a2f7dd0-f71b-4808-8620-7d2edcf0b568">
+            <input type="hidden" name="redirectTo" value="">
+        </form>
+    </section>
 
     <footer>
         <p>
             <img src="" alt="" </p>
         <p>
-            Developed by Bruno Medeiros & Erick
+            Developed by Bruno Medeiros
             <br>
             <br>© All Rights Reserved
         </p>
