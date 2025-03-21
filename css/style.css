@@ -49,16 +49,12 @@ header {
                 transition: .5s all;
             }
 
-            /*a:hover {
-                color: red;
-            border-bottom: 2px solid rgb(145, 7, 7);
-            } */
-
             .btn {
+                font-family: Arial, sans-serif;
                 background-color: red;
                 padding: 10px;
                 border-radius: 7px;
-                font-size: 15px;
+                font-size: 20px;
             }
 
             .btn:hover {
@@ -247,7 +243,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 #body-contato {
     margin: auto;
     align-items: center;
@@ -261,7 +256,7 @@ html {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 10px 45px;
+    padding: 8px 45px;
     background: #0f1c34;
     width: 500px;
     box-shadow: rgb(111, 110, 110) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -270,7 +265,8 @@ html {
 
 #section-email h2 {
     color: #f5f5f5;
-    font-size: 30px;
+    font-size: 22.7px;
+    justify-content: left;
     margin: auto;
     padding: 10px;
 }
@@ -369,6 +365,7 @@ form button:hover {
     border-radius: 16pc;
 }
 
+
 /*
 .dados-card {
     display: flex;
@@ -384,8 +381,8 @@ form button:hover {
 
 
 
-/* .image {
-    animation: mexendo 1s linear 15s infinite both alternate;
+.image {
+    animation: mexendo 1s linear 5s infinite both alternate;
 }
 
 @keyframes mexendo {
