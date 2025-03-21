@@ -1,5 +1,8 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 header {
@@ -7,8 +10,8 @@ header {
     padding: 10px;
 
     a img {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
 
     nav {
@@ -26,7 +29,7 @@ header {
 
         p {
             float: right;
-            font-size: 30px;
+            font-size: 25px;
             margin-left: 10px;
         }
 
@@ -55,6 +58,7 @@ header {
                 background-color: red;
                 padding: 10px;
                 border-radius: 7px;
+                font-size: 15px;
             }
 
             .btn:hover {
@@ -214,6 +218,7 @@ main {
 .efeito {
     position: relative;
     display: inline-block;
+    font-size: 18px;
 }
 
 .efeito:before {
@@ -232,6 +237,128 @@ main {
 
 .efeito:hover:before {
     transform: scaleX(2);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contato-html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aqua;
+}
+
+.section-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: antiquewhite;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.section-email h2 {
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+.section-email form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus {
+    border-radius: 16px;
+}
+
+form textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form textarea:focus {
+    border-radius: 16px;
+}
+
+form button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover {
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #101026;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+}
+
+.paragrafo {
+    color: #f5f5f5;
+    margin-bottom: 50px;
+}
+
+.btnobrigado {
+    padding: 15px 55px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #101026;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.btnobrigado:hover {
+    border-radius: 16pc;
 }
 
 /*
