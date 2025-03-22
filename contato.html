@@ -56,15 +56,15 @@
         <h2>Entre em Contato Comigo</h2>
         <form action="https://api.staticforms.xyz/submit" method="post">
             <label>Nome</label>
-            <input type="text" name="name" placeholder="Digite seu Nome" autocomplete="off">
+            <input type="text" name="name" placeholder="Digite seu Nome" autocomplete="off" required>
             <label>E-mail</label>
-            <input type="email" name="email" placeholder="Digite seu E-mail" autocomplete="off">
+            <input type="email" name="email" placeholder="Digite seu E-mail" autocomplete="off" required>
             <label>Mensagem</label>
             <textarea name="message" cols="30" rows="10" placeholder="Digite uma Mensagem"></textarea>
             <button class="btn-enviar" type="submit" onclick="enviarEmail(event)">Enviar</button>
 
             <input type="hidden" name="accessKey" value="5a2f7dd0-f71b-4808-8620-7d2edcf0b568">
-            <!-- <input type="hidden" name="redirectTo" value="https://karnatia-world.vercel.app/obrigado.html"> -->
+            <input type="hidden" name="redirectTo" value="https://karnatia-world.vercel.app/obrigado.html">
         </form>
     </section>
 
@@ -77,22 +77,30 @@
             <br>© All Rights Reserved
         </p>
     </footer>
+
+    <script src=""></script>
     <script>
 
 
         function enviarEmail(event) {
+            event.preventDefault();
             Swal.fire({
-                position: "top-end",
+                position: "center",
                 icon: "success",
-                title: "Your work has been saved",
+                title: "Email enviado com sucesso",
                 showConfirmButton: false,
-                timer: 1500
+                showConfirmButton: "Ok",
+                // timer: 2000
             });
         }
 
+        /* let inputText = document.querySelector(".input-text")
 
-
+        if (inputText.value === "") {
+            "Por favor"
+        }*/
     </script>
+
 </body>
 
 </html>
