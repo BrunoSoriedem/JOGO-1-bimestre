@@ -8,6 +8,7 @@
 
     <link href="images/logo.png" rel="shortcut icon">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body id="body-contato">
@@ -60,10 +61,10 @@
             <input type="email" name="email" placeholder="Digite seu E-mail" autocomplete="off">
             <label>Mensagem</label>
             <textarea name="message" cols="30" rows="10" placeholder="Digite uma Mensagem"></textarea>
-            <button type="submit">Enviar</button>
+            <button class="btn-enviar" type="submit" onclick="enviarEmail(event)">Enviar</button>
 
             <input type="hidden" name="accessKey" value="5a2f7dd0-f71b-4808-8620-7d2edcf0b568">
-            <input type="hidden" name="redirectTo" value="https://karnatia-world.vercel.app/obrigado.html">
+            <!-- <input type="hidden" name="redirectTo" value="https://karnatia-world.vercel.app/obrigado.html"> -->
         </form>
     </section>
 
@@ -76,6 +77,22 @@
             <br>© All Rights Reserved
         </p>
     </footer>
+    <script>
+
+
+        function enviarEmail(event) {
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Your work has been saved",
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+
+
+
+    </script>
 </body>
 
 </html>

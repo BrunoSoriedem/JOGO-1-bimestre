@@ -263,6 +263,7 @@ html {
     width: 500px;
     box-shadow: rgb(111, 110, 110) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 100px;
+    border-radius: 20px;
 }
 
 #section-email h2 {
