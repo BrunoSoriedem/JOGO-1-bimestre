@@ -84,6 +84,7 @@ footer {
 main {
     width: 1000px;
     margin: auto;
+    padding-top: 100px;
 
     .tabela {
         display: grid;
@@ -235,7 +236,8 @@ main {
 }
 
 header {
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
 }
 
@@ -252,7 +254,7 @@ html {
 }
 
 #section-email {
-    margin: auto;
+    margin: 50px auto;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
