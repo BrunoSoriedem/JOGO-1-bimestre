@@ -30,16 +30,15 @@
                     </a>
                 </li>
                 <li>
-                    <a href="quemSomos.html" title="Quem somos?">
+                    <a href="historia.html" title="História">
                         <div class="efeito">
                             História
                         </div>
                     </a>
-                </li>
                 <li>
-                    <a href="historia.html" title="História">
+                    <a href="galeria.html" title="Quem somos?">
                         <div class="efeito">
-                            Galeria
+                            Galeria de Fotos
                         </div>
                     </a>
                 </li>
@@ -60,8 +59,8 @@
             <label>E-mail</label>
             <input type="email" name="email" placeholder="Digite seu E-mail" autocomplete="off" required>
             <label>Mensagem</label>
-            <textarea name="message" cols="30" rows="10" placeholder="Digite uma Mensagem"></textarea>
-            <button class="btn-enviar" type="submit" onclick="enviarEmail(event)">Enviar</button>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite uma Mensagem" required></textarea>
+            <button type="submit" id="enviar-btn">Enviar</button>
 
             <input type="hidden" name="accessKey" value="5a2f7dd0-f71b-4808-8620-7d2edcf0b568">
             <input type="hidden" name="redirectTo" value="https://karnatia-world.vercel.app/obrigado.html">
@@ -78,28 +77,7 @@
         </p>
     </footer>
 
-    <script src=""></script>
-    <script>
-
-
-        function enviarEmail(event) {
-            event.preventDefault();
-            Swal.fire({
-                position: "center",
-                icon: "success",
-                title: "Email enviado com sucesso",
-                showConfirmButton: false,
-                showConfirmButton: "Ok",
-                // timer: 2000
-            });
-        }
-
-        /* let inputText = document.querySelector(".input-text")
-
-        if (inputText.value === "") {
-            "Por favor"
-        }*/
-    </script>
+    <script src="confirmacao.js"></script>
 
 </body>
 

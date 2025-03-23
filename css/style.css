@@ -261,8 +261,8 @@ html {
     padding: 50px;
     background: #0f1c34;
     width: 500px;
-    box-shadow: rgb(111, 110, 110) 0px 19px 38px,
-        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgb(0, 0, 0) 5px 25px 43px,
+        rgba(0, 0, 0, 0.22) 5px 25px 17px;
     border-radius: 20px;
 }
 
@@ -362,7 +362,7 @@ form button:hover {
     text-decoration: none;
     color: #101026;
     font-size: 18px;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 .btnobrigado:hover {
