@@ -10,8 +10,8 @@ header {
     padding: 10px;
 
     a img {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
 
     nav {
@@ -383,9 +383,7 @@ form button:hover {
     text-align: center;
 }
 
-
-
-.image {
+#image {
     animation: mexendo 1s linear 5s infinite both alternate;
 }
 
@@ -397,4 +395,4 @@ form button:hover {
     100% {
         transform: skew(30deg, 20deg);
     }
-} */
+}*/
