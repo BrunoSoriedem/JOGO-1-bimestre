@@ -188,6 +188,10 @@ main {
             justify-content: space-around;
             margin-top: -70px;
         }
+
+        #clique-jogar {
+            text-align: center;
+        }
     }
 }
 
