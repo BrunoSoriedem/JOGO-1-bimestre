@@ -85,6 +85,7 @@ main {
     width: 1000px;
     margin: auto;
     padding-top: 100px;
+    /* padding-left: 100px; */
 
     .tabela {
         display: grid;
@@ -92,9 +93,12 @@ main {
         align-items: center;
 
         .coluna {
+
             img {
-                width: 80%;
+                width: 90%;
                 height: auto;
+                padding-left: 80px;
+
             }
         }
 
@@ -120,35 +124,52 @@ main {
 
         p {
             font-size: 40px;
+            margin-left: 90px;
         }
 
         h1 {
             font-size: 50px;
-            transition: 1.2s all;
+            transition: 1.0s all;
         }
+    }
+
+    #nomejogo {
+        padding-left: 90px;
     }
 
     #nomejogo:hover {
         color: rgba(255, 0, 0, 0.83);
-        font-size: 65px;
+        font-size: 57.5px;
     }
 
     #sobre {
+        margin-top: 167px;
+        padding-left: 20px;
+
         h2 {
             text-transform: uppercase;
             text-align: center;
-            margin: 30px;
+            margin: 20px;
             font-size: 50px;
         }
 
-        .image {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 0 25px white;
+        h3 {
+            text-align: center;
+            font-size: 40px;
         }
 
-        p {
-            margin: 30px;
+        .video {
+            border-radius: 20px;
+            box-shadow: 0 0 25px white;
+            margin-top: 50px;
+        }
+    }
+
+    #historia {
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin: 50px;
         }
     }
 
