@@ -79,13 +79,21 @@ footer {
     p {
         text-align: center;
     }
+
+    .redes {
+        a {
+            color: #FFF;
+            font-size: 1.3em;
+            text-decoration: none;
+            margin: 15px;
+        }
+    }
 }
 
 main {
     width: 1000px;
     margin: auto;
     padding-top: 100px;
-    /* padding-left: 100px; */
 
     .tabela {
         display: grid;
@@ -171,6 +179,7 @@ main {
             text-align: center;
             margin: 200px;
             background-color: black;
+            border-radius: 10px;
             color: white;
             padding: 10px;
         }
@@ -182,26 +191,41 @@ main {
         }
 
 
-        p {
-            margin: 25px;
-            padding: 20px;
-            justify-content: space-around;
+        .center {
+            margin: 20px;
+            padding: 15px;
+            justify-content: space-between;
             margin-top: -70px;
+            align-items: center;
+        }
+
+        p {
+            align-items: center;
         }
 
         #info-jogo {
-            text-align: center;
-            font-size: 20px;
+            display: flex;
         }
 
-        .btn {
+        a {
             font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: 0, 5s all;
+            font-size: 1.3rem;
+            transition: .5s all;
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            font-size: 25px;
+        }
+
+        .btn-jogo {
+
             background-color: red;
             padding: 10px;
             border-radius: 7px;
-            font-size: 25px;
-            color: white;
-            text-decoration: none;
+
             margin: 45%;
         }
 
@@ -211,6 +235,8 @@ main {
         }
     }
 }
+
+
 
 #planos {
     h2 {
