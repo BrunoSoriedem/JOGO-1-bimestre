@@ -70,6 +70,7 @@ header {
     background-repeat: no-repeat;
     background-size: auto;
     background-color: #0E1729;
+    /* box-shadow: black 10px 10px 10px 10px; */
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -117,7 +118,7 @@ main {
         grid-template-columns: 50% 50%;
         align-items: center;
 
-        .coluna {
+        /*  .coluna {
 
             img {
                 width: 90%;
@@ -134,7 +135,7 @@ main {
             padding: 10px;
             border-radius: 5px;
             font-size: 20px;
-        }
+        }*/
 
         .btn:hover {
             background-color: rgb(193, 130, 13);
@@ -201,13 +202,12 @@ main {
 
     #historia {
 
-        margin: auto;
+        margin: 250px;
 
         .container {
 
             .caixa-preta {
                 text-align: center;
-                margin: 200px;
                 background-color: black;
                 border-radius: 10px;
                 color: white;
@@ -224,20 +224,21 @@ main {
             .center {
                 margin: 25px;
                 padding: 15px;
-                /* justify-content: space-between; */
-                margin-top: -70px;
+                margin-top: -50px;
                 font-size: 15px;
-                align-items: center;
+                align-items: left;
+                float: left;
+                text-align: center;
+                justify-items: center;
             }
 
             .clique-jogo {
                 align-items: center;
-                justify-content: space-evenly;
                 font-size: 20px;
                 margin-left: 215px;
-                padding: 25px;
-                /* margin: 50px; */
-                margin-top: -50px;
+                padding: 80px;
+                margin: -50px;
+                margin-top: -20px;
             }
 
             .btn-jogo {
@@ -248,11 +249,10 @@ main {
                 font-size: 1.3rem;
                 transition: .5s all;
                 font-size: 25px;
-                margin: 100px;
                 background-color: red;
                 padding: 10px;
                 border-radius: 7px;
-                margin: 45%;
+                margin: 40%;
             }
 
             .btn-jogo:hover {
