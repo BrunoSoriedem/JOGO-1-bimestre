@@ -66,7 +66,7 @@ header {
 }
 
 .imagem-de-fundo {
-    background-image: url(../images/fundo.png);
+    background-image: url(../images/fundo2.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-color: #0E1729;
@@ -169,7 +169,7 @@ main {
     }
 
     #sobre {
-        margin-top: 350px;
+        margin-top: 400px;
         padding-left: 10px;
 
         h2 {
@@ -180,14 +180,22 @@ main {
         }
 
         h3 {
-            text-align: center;
             font-size: 40px;
+            text-align: center;
+            margin: 250px;
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
         }
 
         .video {
+            align-items: center;
+            display: flex;
             border-radius: 20px;
             box-shadow: 0 0 25px white;
-            margin-top: 50px;
+            margin-top: -200px;
+            margin-left: 200px;
         }
     }
 
@@ -216,45 +224,38 @@ main {
             .center {
                 margin: 25px;
                 padding: 15px;
-                /* justify-content: flex-start; */
+                /* justify-content: space-between; */
                 margin-top: -70px;
                 font-size: 15px;
                 align-items: center;
             }
 
-            .testando {
+            .clique-jogo {
                 align-items: center;
-                margin-top: 0;
                 justify-content: space-evenly;
                 font-size: 20px;
-                margin-left: 150px;
-                padding: 20px;
+                margin-left: 215px;
+                padding: 25px;
+                /* margin: 50px; */
                 margin-top: -50px;
             }
 
-            a {
+            .btn-jogo {
                 font-family: Arial, Helvetica, sans-serif;
                 text-decoration: none;
                 color: rgb(255, 255, 255);
                 transition: 0, 5s all;
                 font-size: 1.3rem;
                 transition: .5s all;
-                /* display: flex;
-                text-align: center;
-                justify-content: space-around; */
                 font-size: 25px;
-            }
-
-            .btn-jogo {
-
+                margin: 100px;
                 background-color: red;
                 padding: 10px;
                 border-radius: 7px;
-
                 margin: 45%;
             }
 
-            .btn:hover {
+            .btn-jogo:hover {
                 background-color: brown;
                 color: white;
             }
