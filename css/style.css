@@ -220,16 +220,23 @@ main {
                 font-size: 40px;
             }
 
+            p {
+                margin: 20px;
+                line-height: 30px;
+            }
+
 
             .center {
-                margin: 25px;
-                padding: 15px;
+                flex-direction: column;
+                margin: 20px;
+                padding: 10px;
+                line-height: 40px;
                 margin-top: -50px;
                 font-size: 15px;
-                align-items: left;
-                float: left;
-                text-align: center;
-                justify-items: center;
+                /* align-items: left; */
+                /* float: left; */
+                /* text-align: center; */
+                /* justify-items: center; */
             }
 
             .clique-jogo {
@@ -290,10 +297,10 @@ main {
             font-size: 16px;
         }
 
-        hr {
+        /* hr {
             margin: 20px 0;
             border: 1px dashed #ccc;
-        }
+        } */
 
         .valor {
             color: red;
