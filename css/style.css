@@ -231,7 +231,7 @@ main {
                 padding: 10px;
                 line-height: 40px;
                 margin-top: -50px;
-                font-size: 15px;
+                font-size: 17px;
                 align-items: left;
                 float: left;
                 text-align: center;
@@ -524,6 +524,36 @@ form button:hover {
 
 .btnobrigado:hover {
     border-radius: 16pc;
+}
+
+@media (min-width: 1000px) {
+    .header {
+        .header-menu {
+            display: none;
+        }
+
+        .header-nav {
+            display: block;
+            float: right;
+            border: 0;
+
+            ul {
+                li {
+                    display: inline-block;
+
+                    a:hover {
+                        color: white;
+                        border-bottom: 5px solid red;
+                        padding: 27px;
+                    }
+
+                    a {
+                        padding: 27px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

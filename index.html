@@ -24,13 +24,17 @@
 
 <body class="imagem-de-fundo">
     <header>
-        <nav>
+        <nav class="header-nav">
             <div>
                 <a href="index.html" title="Home">
                     <img src="images/fenix.png" alt="Logo Fenix">
                 </a>
                 <p>FLAMEBORN</p>
             </div>
+
+            <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
 
             <ul>
                 <li>
@@ -154,6 +158,19 @@
             </a>
         </p>
     </footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+
+        function mostrarMenu() {
+            //document.querySelector(".nav-menu")
+            $(".header-nav").toggle();
+        }
+
+    </script>
+
+
 </body>
 
 </html>
