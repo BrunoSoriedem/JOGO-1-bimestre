@@ -75,12 +75,12 @@
             <label>E-mail</label>
             <input type="email" name="email" placeholder="Digite seu E-mail" autocomplete="off" required>
             <label>Mensagem</label>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
             <textarea name="message" cols="30" rows="10" placeholder="Digite uma Mensagem" required></textarea>
             <button type="submit" id="enviar-btn">Enviar</button>
 
             <input type="hidden" name="accessKey" value="5a2f7dd0-f71b-4808-8620-7d2edcf0b568">
-            <!-- <input type="hidden" name="redirectTo" value="https://karnatia-world.vercel.app/obrigado.html"> -->
-            <input type="hidden" name="_text" value="https://karnatia-world.vercel.app/">
         </form>
     </section>
 

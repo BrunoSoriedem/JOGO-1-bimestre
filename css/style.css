@@ -83,7 +83,6 @@ body {
     font-weight: bold;
 }
 
-
 footer {
     background-color: black;
     padding: 30px;
@@ -202,7 +201,8 @@ main {
 
     #historia {
 
-        margin: 250px;
+        /* margin: 250px; */
+        margin: 250px auto;
 
         .container {
 
@@ -225,63 +225,101 @@ main {
                 line-height: 30px;
             }
 
-
             .center {
-                flex-direction: column;
+
                 margin: 20px;
                 padding: 10px;
                 line-height: 40px;
                 margin-top: -50px;
                 font-size: 15px;
-                /* align-items: left; */
-                /* float: left; */
-                /* text-align: center; */
-                /* justify-items: center; */
+                align-items: left;
+                float: left;
+                text-align: center;
+                justify-items: center;
             }
 
             .clique-jogo {
                 align-items: center;
                 font-size: 20px;
-                margin-left: 215px;
-                padding: 80px;
-                margin: -50px;
-                margin-top: -20px;
-            }
 
-            .btn-jogo {
-                font-family: Arial, Helvetica, sans-serif;
-                text-decoration: none;
-                color: rgb(255, 255, 255);
-                transition: 0, 5s all;
-                font-size: 1.3rem;
-                transition: .5s all;
-                font-size: 25px;
-                background-color: red;
-                padding: 10px;
-                border-radius: 7px;
-                margin: 40%;
-            }
-
-            .btn-jogo:hover {
-                background-color: brown;
-                color: white;
             }
         }
     }
 }
 
+.ButtonJogar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center !important;
+    gap: 40px;
+    padding-bottom: 60px;
 
-
-#planos {
-    h2 {
-        text-transform: uppercase;
-        text-align: center;
-        margin: 30px;
+    label {
+        font-size: 22px
     }
 
-    .grid-3 {
+    .centerButton {
+        text-align: center;
+
+        .btn-jogo {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: 0, 5s all;
+            font-size: 1.3rem;
+            transition: .5s all;
+            font-size: 25px;
+            background-color: red;
+            padding: 10px;
+            border-radius: 7px;
+        }
+
+        .btn-jogo:hover {
+            background-color: brown;
+            color: white;
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+    margin-top: -50px;
+    font: 40px arial;
+}
+
+.faixa {
+    margin: 20px;
+    padding: 10px;
+    line-height: 40px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+
+.imagens-Galeria {
+
+    .grid {
         display: grid;
-        grid-template-columns: repeat(3, 33.33%);
+        grid-template-columns: repeat(3, 33%);
+
+        .col {
+            padding: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    #planos {
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            margin: 30px;
+        }
 
         .col {
             box-shadow: 0 0 25px white;
