@@ -15,16 +15,13 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link href="css/style.css" rel="stylesheet">
-
-
-
     <link href="images/fenix.png" rel="shortcut icon">
 
 </head>
 
 <body class="imagem-de-fundo">
     <header>
-        <nav class="header-nav">
+        <nav>
             <div>
                 <a href="index.html" title="Home">
                     <img src="images/fenix.png" alt="Logo Fenix">
@@ -36,42 +33,42 @@
                 <i class="fa-solid fa-bars"></i>
             </a>
 
-            <ul>
-                <li>
-                    <a href="index.html" title="Home">
-                        <div class="efeito">
-                            Home
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#historia" title="História">
-                        <div class="efeito">
-                            História
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="galeria.html" title="Quem somos?">
-                        <div class="efeito">
-                            Galeria de Fotos
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="contato.html" title="Contato">
-                        <div class="efeito">
-                            Contato
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="jogo" title="jogo" class="btn">
-                        Jogar
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home">
+                            <div class="efeito">
+                                Home
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#historia" title="História">
+                            <div class="efeito">
+                                História
+                            </div>
+                        </a>
+                    <li>
+                        <a href="galeria.html" title="Quem somos?">
+                            <div class="efeito">
+                                Galeria de Fotos
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html" title="Contato">
+                            <div class="efeito">
+                                Contato
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="jogo" title="jogo" class="btn">
+                            Jogar
+                        </a>
+                    </li>
+                </ul>
+            </nav>
     </header>
 
     <main>
@@ -91,8 +88,7 @@
             </div>
             </div>
         </section>
-        <section id="sobre">
-            <!-- <h3>Saiba mais sobre o jogo</h3> -->
+        <section id="sobre" data-aos="fade-right">
             <iframe class="video" width="60%" height="300" src="https://www.youtube.com/embed/ujz60VEIoBU"
                 title="O mago acendeu a lareira...entre e Estude nesta sala tranquila..." frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -101,7 +97,7 @@
 
         <section id="historia">
             <div class="container">
-                <h1>
+                <h1 data-aos="fade-up-right">
                     <span class="caixa-preta">Sobre este Jogo</span> <br> <br>
                 </h1>
                 <br>
@@ -169,8 +165,9 @@
         }
 
     </script>
-
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

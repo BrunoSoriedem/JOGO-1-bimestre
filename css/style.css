@@ -8,10 +8,27 @@
 header {
     background-color: black;
     padding: 10px;
+    z-index: 999;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        align-items: end;
+    }
 
     a img {
         width: 80px;
         height: 80px;
+    }
+
+    .header-menu {
+        border: 1px solid white;
+        color: white;
+        float: right;
+        font-size: 2em;
+        padding: 10px;
+        margin: 10px;
     }
 
     nav {
@@ -528,12 +545,13 @@ form button:hover {
 
 @media (min-width: 1000px) {
     .header {
+
         .header-menu {
             display: none;
         }
 
         .header-nav {
-            display: block;
+            display: flex;
             float: right;
             border: 0;
 
@@ -543,7 +561,6 @@ form button:hover {
 
                     a:hover {
                         color: white;
-                        border-bottom: 5px solid red;
                         padding: 27px;
                     }
 
@@ -555,6 +572,8 @@ form button:hover {
         }
     }
 }
+
+
 
 
 /*
