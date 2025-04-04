@@ -22,6 +22,18 @@ header {
         height: 80px;
     }
 
+    .headerTESTE {
+        background-color: black;
+        padding: 10px;
+        z-index: 999;
+    }
+
+    .header-nav {
+        display: flex;
+        float: right;
+        border: 0;
+    }
+
     .header-menu {
         border: 1px solid white;
         color: white;
@@ -544,7 +556,7 @@ form button:hover {
 }
 
 @media (min-width: 1000px) {
-    .header {
+    .headerTESTE {
 
         .header-menu {
             display: none;
