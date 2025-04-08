@@ -555,15 +555,19 @@ form button:hover {
     border-radius: 16pc;
 }
 
-@media (min-width: 1000px) {
+.header-menu {
+    display: none;
+}
+
+@media (max-width: 1000px) {
     .headerTESTE {
 
         .header-menu {
-            display: none;
+            display: block;
         }
 
         .header-nav {
-            display: flex;
+            display: none;
             float: right;
             border: 0;
 
