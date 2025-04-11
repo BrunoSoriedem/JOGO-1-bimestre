@@ -567,6 +567,44 @@ form button:hover {
     border-radius: 16pc;
 }
 
+.ButtonJogar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center !important;
+    gap: 40px;
+    padding-bottom: 60px;
+}
+
+.controls {
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #0b2352;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.controls ul {
+    list-style: none;
+    padding: 0;
+}
+
+.controls ul li {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.controls ul li:last-child {
+    border-bottom: none;
+}
+
+
 .telaJogo {
     background-color: 500px
 }
@@ -574,38 +612,49 @@ form button:hover {
 .sobreTelaJogo {
     iframe {
         width: 100%;
-        height: 600px;
+        height: 500px;
         border: 0;
+        margin: auto;
+    }
+
+    .containerTelaJogo {
+        width: 90%;
+        margin: auto;
+    }
+
+    .centerTelaJogo {
+        text-align: center;
+    }
+
+    .jogoConstruct {
+        margin-bottom: 50px;
+    }
+
+    .centerButton {
+        text-align: center;
+    }
+
+    .btn-jogo {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: 0, 5s all;
+        font-size: 1.3rem;
+        transition: .5s all;
+        font-size: 25px;
+        background-color: red;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 7px;
+        margin-bottom: 50px;
+    }
+
+    .btn-jogo:hover {
+        background-color: brown;
+        color: white;
     }
 }
 
-.containerTelaJogo {
-    width: 90%;
-    margin: auto;
-}
-
-.centerTelaJogo {
-    text-align: center;
-}
-
-.btn-jogo {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    transition: 0, 5s all;
-    font-size: 1.3rem;
-    transition: .5s all;
-    font-size: 25px;
-    background-color: red;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 7px;
-}
-
-.btn-jogo:hover {
-    background-color: brown;
-    color: white;
-}
 
 .header-menu {
     display: none;
