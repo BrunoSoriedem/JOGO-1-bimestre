@@ -95,12 +95,16 @@ header {
 }
 
 .imagem-de-fundo {
-    display: block;
-    background-image: url(../images/fundo2.png) center;
-    height: 100%;
+    background-image: url(../images/fundo2.png);
+    background-size: 1950px;
+    background-position: top;
     width: 100%;
-    background-size: cover;
+    background-repeat: no-repeat;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -114,6 +118,7 @@ footer {
     background-color: black;
     padding: 30px;
     align-items: end;
+    width: 100%;
 
     p {
         text-align: center;
@@ -137,7 +142,6 @@ footer {
 
 main {
     width: 1000px;
-    margin: auto;
     padding-top: 100px;
 
     .tabela {
@@ -218,21 +222,34 @@ main {
         }
 
         .video {
-            align-items: center;
-            display: flex;
+            /* align-items: center; */
+            /* display: flex; */
             border-radius: 20px;
             box-shadow: 0 0 25px white;
-            margin-top: -200px;
-            margin-left: 200px;
+            /* top: 50%;*/
+            left: 20%;
+            position: relative;
         }
     }
 
     #historia {
 
-        /* margin: 250px; */
-        margin: 250px auto;
+        /* margin: 250px auto; */
+        margin-top: 250px;
+        z-index: 999;
+        padding: 30px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
 
         .container {
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; */
 
             .caixa-preta {
                 text-align: center;
@@ -257,7 +274,6 @@ main {
                 margin: 20px;
                 padding: 10px;
                 line-height: 40px;
-                margin-top: -50px;
                 font-size: 17px;
                 align-items: left;
                 float: left;
@@ -288,12 +304,13 @@ main {
 }
 
 .ButtonJogar {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center !important;
-    gap: 40px;
-    padding-bottom: 60px;
+    /* display: flex; */
+    /* justify-content: center;
+    flex-direction: column; */
+    /* text-align: center !important; */
+    /* gap: 40px; */
+    /* padding-bottom: 60px; */
+    margin-top: 0;
 
     label {
         font-size: 22px
@@ -663,7 +680,7 @@ form button:hover {
 @media (max-width: 1000px) {
 
     .imagem-de-fundo {
-        background-image: url(../images/fundo2.png) center;
+        background-image: url(../images/fundo2.png);
     }
 
     .headerTESTE {
@@ -696,7 +713,6 @@ form button:hover {
             padding: 10px;
             margin: 10px;
             text-align: center;
-            /* display: felx;*/
             position: absolute;
             width: 100%;
 
