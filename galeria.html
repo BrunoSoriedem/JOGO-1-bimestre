@@ -21,14 +21,18 @@
 
 <body>
     <header class="header">
-        <nav>
-            <div>
-                <a href="index.html" title="Home">
-                    <img src="images/fenix.png" alt="Logo Fenix">
-                </a>
-                <p class="escrita">FLAMEBORN</p>
-            </div>
+        <div>
+            <a href="index.html" title="Home">
+                <img src="images/fenix.png" alt="Logo Fenix">
+            </a>
+            <p class="escrita">FLAMEBORN</p>
+        </div>
 
+        <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <nav class="nav-desktop">
             <ul>
                 <li>
                     <a href="index.html" title="Home">
@@ -64,6 +68,56 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="logo-mobile">
+            <a href="index.html" title="Home">
+                <img src="images/fenix.png" alt="Logo Fenix">
+            </a>
+            <p>FLAMEBORN</p>
+        </div>
+
+        <div class="nav-mobile">
+            <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home">
+                            <div class="efeito">
+                                Home
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#historia" title="História">
+                            <div class="efeito">
+                                História
+                            </div>
+                        </a>
+                    <li>
+                        <a href="galeria.html" title="Quem somos?">
+                            <div class="efeito">
+                                Galeria de Fotos
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html" title="Contato">
+                            <div class="efeito">
+                                Contato
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="jogo.html" title="jogo" class="btn">
+                            Jogar
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="imagens-Galeria">
@@ -118,6 +172,9 @@
             </a>
         </p>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
