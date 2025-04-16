@@ -28,10 +28,6 @@
             <p class="escrita">FLAMEBORN</p>
         </div>
 
-        <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-
         <nav class="nav-desktop">
             <ul>
                 <li>
@@ -77,46 +73,47 @@
         </div>
 
         <div class="nav-mobile">
-            <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html" title="Home">
-                            <div class="efeito">
-                                Home
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html#historia" title="História">
-                            <div class="efeito">
-                                História
-                            </div>
-                        </a>
-                    <li>
-                        <a href="galeria.html" title="Quem somos?">
-                            <div class="efeito">
-                                Galeria de Fotos
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contato.html" title="Contato">
-                            <div class="efeito">
-                                Contato
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="jogo.html" title="jogo" class="btn">
-                            Jogar
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div>
+                <i id="header-menu" class="fa-solid fa-bars"></i>
+            </div>
+            <div class="teste">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html" title="Home">
+                                <div class="efeito">
+                                    Home
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#historia" title="História">
+                                <div class="efeito">
+                                    História
+                                </div>
+                            </a>
+                        <li>
+                            <a href="galeria.html" title="Quem somos?">
+                                <div class="efeito">
+                                    Galeria de Fotos
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contato.html" title="Contato">
+                                <div class="efeito">
+                                    Contato
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="jogo.html" title="jogo" class="btn">
+                                Jogar
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -161,7 +158,7 @@
         <section id="historia">
             <div class="container">
                 <h1 data-aos="fade-up-right">
-                    <span class="caixa-preta">Sobre este Jogo</span> <br> <br>
+                    <span class="caixa-preta">Sobre este Jogo</span>
                 </h1>
                 <br>
                 <p class="center" data-aos="fade-left">Em um mundo onde a magia molda destinos, você é Sung, o Mago das
@@ -215,6 +212,7 @@
 
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="confirmacao.js"></script>
     <!-- <script>
 
         function mostrarMenu() {

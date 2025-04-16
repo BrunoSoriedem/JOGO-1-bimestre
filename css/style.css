@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.active {
+    display: block;
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -52,7 +56,13 @@ body {
     }
 
     .nav-mobile {
-        display: none;
+        display: flex;
+        justify-content: space-between;
+
+        .teste {
+            display: none;
+            border: 1px solid white;
+        }
     }
 
     .logo-mobile {
@@ -300,7 +310,7 @@ main {
                 margin: 50px;
                 text-align: center;
                 font-size: 40px;
-                margin-top: -50px;
+                /* margin-top: -50px; */
             }
 
             p {
@@ -781,7 +791,6 @@ form button:hover {
         }
 
         .nav-mobile {
-            border: 1px solid white;
             padding: 10px;
             margin: 10px;
             text-align: center;
@@ -835,7 +844,7 @@ h1 {
         font: 40px arial; */
 }
 
-.imagens-Galeria {
+.imagens-Galeria-desktop {
     /* margin-bottom: 100px;
         margin-left: 0%;
         top: 50%; */
@@ -872,7 +881,12 @@ h1 {
     /* padding: auto; */
 }
 
-.caixa-preta,
+.caixa-preta {
+    margin-left: 5000px;
+    font-size: 20px;
+    margin: 50px;
+}
+
 .center {
     margin-left: 5000px;
     margin: 50px;
