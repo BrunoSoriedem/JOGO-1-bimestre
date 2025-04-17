@@ -19,7 +19,7 @@ body {
     padding: 10px;
     z-index: 999;
     position: fixed;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
 
     div {
@@ -982,5 +982,4 @@ form button:hover {
     background-color: black;
     border-radius: 10px;
     color: white;
-}
 }
