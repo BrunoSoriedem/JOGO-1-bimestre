@@ -55,7 +55,7 @@ body {
         border: 0;
 
         ul {
-            margin-left: 120px;
+            margin-left: 340px;
         }
 
     }
@@ -824,7 +824,7 @@ form button:hover {
                 gap: 30px;
                 position: absolute;
                 top: 1%;
-                right: 10px;
+                right: 13px;
                 background-color: #0008;
                 box-shadow: 0 0 8px 1px #fff;
                 padding: 30px 0px;
@@ -944,18 +944,6 @@ form button:hover {
             padding-top: 100px;
         }
 
-        .faixa {
-            margin: 20px;
-            font-size: 25px;
-            padding: 10px;
-            line-height: 40px;
-            text-align: center;
-            background-color: black;
-            border-radius: 10px;
-            color: white;
-        }
-
-
         .imagens-Galeria {
             .grid {
                 display: grid;
@@ -983,5 +971,16 @@ form button:hover {
         font-size: 15px;
         margin-left: -40px;
         width: 300px;
+    }
+
+    .faixa {
+        margin: 20px;
+        font-size: 25px;
+        padding: 10px;
+        line-height: 40px;
+        text-align: center;
+        background-color: black;
+        border-radius: 10px;
+        color: white;
     }
 }
