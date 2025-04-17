@@ -53,8 +53,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Cnds.OnLand,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.Plugins.System.Acts.CreateObject,
 		C3.ScriptsInEvents.Folhacastelo_Event2_Act1,
-		C3.Plugins.Audio.Acts.StopAll,
+		C3.Plugins.Sprite.Acts.SetAngle,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.Text.Acts.SetVisible,
 		C3.Plugins.Text.Cnds.OnCreated
@@ -132,9 +133,6 @@ self.C3_JsPropNameTable = [
 	{habilidade: 0},
 	{btnINICIAR: 0},
 	{PlanoDeFundoEmBlocos8: 0},
-	{TextoProximo: 0},
-	{historiaPergunta2: 0},
-	{TextoVoltar: 0},
 	{chefe: 0},
 	{Dano1: 0},
 	{Dano2: 0},
@@ -201,8 +199,5 @@ self.InstanceType = {
 	PlanoDeFundoEmBlocos7: class extends self.ITiledBackgroundInstance {},
 	habilidade: class extends self.ITextInstance {},
 	btnINICIAR: class extends self.ISpriteInstance {},
-	PlanoDeFundoEmBlocos8: class extends self.ITiledBackgroundInstance {},
-	TextoProximo: class extends self.ITextInstance {},
-	historiaPergunta2: class extends self.ITextInstance {},
-	TextoVoltar: class extends self.ITextInstance {}
+	PlanoDeFundoEmBlocos8: class extends self.ITiledBackgroundInstance {}
 }

@@ -1308,8 +1308,9 @@ self.C3_ExpressionFuncs = [
 		() => "AtaqueJato",
 		() => "Parada",
 		() => "direita",
-		() => -10,
-		() => "spawn",
+		() => 1833,
+		() => 24,
+		() => 180,
 		() => "danoJato",
 		() => "chegando",
 		() => 15,
@@ -1318,8 +1319,8 @@ self.C3_ExpressionFuncs = [
 		() => 0.4,
 		() => 0.3,
 		() => 35,
-		() => "Será que seu amor resistirá às trevas? ",
-		() => "Será que Sung irá conseguir libertar sua amada e então derrotar Rei Kragnath?"
+		() => 1.5,
+		() => "                                            Será que seu amor resistirá às trevas? \n\n\n          Será que Sung irá conseguir libertar sua amada e então derrotar Rei Kragnath?"
 ];
 
 
