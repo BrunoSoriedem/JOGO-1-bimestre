@@ -33,7 +33,7 @@ function formatarTelefone(input) {
         input.setCustomValidity("");
     }
 
-    if (telefone.length === 12) {
+    if (telefone.length === 11) {
         input.value = telefone.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
     } else if (telefone.length === 10) {
         input.value = telefone.replace(/(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
