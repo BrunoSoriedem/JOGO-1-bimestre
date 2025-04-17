@@ -936,51 +936,52 @@ form button:hover {
             padding-top: 100px;
         }
 
-        #section-email {
-            margin: 50px auto;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 50px;
-            background: #0f1c34;
-            width: 150px;
-            margin-top: 150px;
-            box-shadow: rgb(0, 0, 0) 5px 25px 43px,
-                rgba(0, 0, 0, 0.22) 5px 25px 17px;
-            border-radius: 20px;
+        h1 {
+            text-align: center;
+            margin: 50px;
+            margin-top: -50px;
+            font: 40px arial;
+            padding-top: 100px;
         }
 
-        #section-email h2 {
-            color: #f5f5f5;
-            font-size: 5px;
-            justify-content: left;
+        .faixa {
+            margin: 20px;
+            font-size: 25px;
+            padding: 10px;
+            line-height: 40px;
+            text-align: center;
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+        }
+
+
+        .imagens-Galeria {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
     }
 
-    h1 {
-        text-align: center;
-        margin: 50px;
-        margin-top: -50px;
-        font: 40px arial;
-        padding-top: 100px;
+    #section-email {
+        margin: 50px auto;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 50px;
+        background: #0f1c34;
+        width: 300px;
+        margin-top: 150px;
+        box-shadow: rgb(0, 0, 0) 5px 25px 43px,
+            rgba(0, 0, 0, 0.22) 5px 25px 17px;
+        border-radius: 20px;
     }
 
-    .faixa {
-        margin: 20px;
-        font-size: 25px;
-        padding: 10px;
-        line-height: 40px;
-        text-align: center;
-        background-color: black;
-        border-radius: 10px;
-        color: white;
-    }
-
-
-    .imagens-Galeria {
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-        }
+    #section-email h2 {
+        color: #f5f5f5;
+        font-size: 15px;
+        margin-left: -40px;
+        width: 300px;
     }
 }
