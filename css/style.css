@@ -19,7 +19,6 @@ body {
     padding: 10px;
     z-index: 999;
     position: fixed;
-    /* display: flex; */
     justify-content: space-between;
 
     div {
@@ -42,12 +41,6 @@ body {
     .escrita {
         font-size: 20px;
     }
-
-    /* .headerTESTE {
-        background-color: black;
-        padding: 10px;
-        z-index: 999;
-    } */
 
     .nav-desktop {
         display: flex;
@@ -772,7 +765,7 @@ form button:hover {
     }
 
     .containerTelaJogo {
-        width: 100%;
+        width: 80%;
         /* height: 500px; */
         margin: auto;
     }
